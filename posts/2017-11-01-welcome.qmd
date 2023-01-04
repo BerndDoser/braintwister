@@ -1,0 +1,41 @@
+---
+title: "Welcome to BrainTwister"
+description: "The Future of Scientific Engineering"
+author: "Bernd Doser"
+date: "11/1/2017"
+categories:
+  - General
+---
+In the recent decades tremendous progress was achieved in many fields of
+scientific computing such as machine learning, genome sequencing, numerical
+simulations, to name but a few. This amazing success was not only made possible
+by the continuous development of the algorithms, but also by the constant
+improvement of powerful programming languages and development techniques to
+manage the complex algorithms. However, many scientific software projects are
+still hard to maintain or failing because of deprecated programming languages,
+libraries, or features or disregarded well-established development techniques.
+
+The purpose of BrainTwister is in the development and provision of high
+performance software in the field of scientific computing, while at the same
+time special emphasis will be placed in the usage of state-of-the art
+programming language features and development techniques without compromises.
+
+This includes for example:
+
+ * Version control via Git
+ * Project management via [GitLab](https://gitlab.braintwister.eu) and [GitHub](https://github.com/BrainTwister)
+ * Continuous integration via [Jenkins](https://jenkins.braintwister.eu)
+ * [Development environment via Docker]({{site.url}}/news/docker-development-environment/)
+ * Extensive software testing 
+ * Software metric control
+
+Thematically, the main focus is at the moment in the development of
+[BlasBooster]({{site.url}}/projects/blasbooster/), a linear algebra library to
+combine dense and sparse algorithms. 
+
+I hope that my short outlook has made your interest grow to find out more and I
+am looking forward to received your feedback.
+
+Best regards,
+
+Bernd Doser

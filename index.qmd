@@ -1,0 +1,14 @@
+---
+title: "BrainTwister"
+about:
+  template: jolla
+  links:
+    - icon: github
+      href: https://github.com/bernddoser
+    - icon: mastodon
+      href: https://mastodon.world/@braintwister
+    - icon: linkedin
+      href: https://www.linkedin.com/in/bernddoser
+---
+
+BrainTwister<sup>&reg;</sup></a> is your gateway to modern scientific software development. We provide scientific software at the highest level by applying state-of-the-art development techniques and the most powerful programming tools to achieve the best possible results in performance, usability, and maintainability.

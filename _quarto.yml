@@ -1,0 +1,34 @@
+project:
+  type: website
+
+website:
+  title: BrainTwister
+  favicon: images/favicon.png
+  navbar:
+    search: true
+    right:
+      - icon: github
+        href: https://github.com/bernddoser
+      - icon: mastodon
+        href: https://mastodon.world/@braintwister
+      - icon: linkedin
+        href: https://www.linkedin.com/in/bernddoser
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Products
+        href: products.qmd
+      - text: Blog
+        href: blog.qmd
+      - about.qmd
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+
+
+

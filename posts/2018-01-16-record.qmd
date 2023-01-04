@@ -1,0 +1,98 @@
+---
+title: "Record: A heterogeneous data structure for C++"
+description: "Record provides a linear, direct accessible data structure with heterogeneous entries."
+author: "Bernd Doser"
+date: "1/16/2018"
+categories:
+  - C++
+  - Functional programming
+---
+
+A record type will be defined with the macro BRAINTWISTER_RECORD.
+
+``` cpp
+BRAINTWISTER_RECORD( record_name, \
+    (( field_type, field_name, field_default_value )) \
+    ... \
+) 
+```
+
+For example a database connection type can be defined by
+
+``` cpp
+BRAINTWISTER_RECORD( Database, \
+    (( std::string, host, "localhost" )) \
+    (( uint16_t, port, 3306 )) \
+    (( std::string, database, "sensors" )) \
+    (( std::string, user, "ruuvi" )) \
+    (( std::string, password, "" )) \
+)
+```
+
+The entry default values are mandatory.
+
+
+## Construction
+
+``` cpp
+auto database = Database().host("staging").port(9876);
+```
+
+
+## Construction by JSON or XML
+
+It is also possible to construct an object by JSON or XML. The construction is
+order independent and use the default values if it is not given in JSON/XML.
+
+``` cpp
+auto json_string = R"(
+    {
+        "port": 9876,
+        "host": "staging",
+    }
+)";
+
+DatabaseConnector db(JSON(json_string));
+```
+
+Here, the [string literal R](http://en.cppreference.com/w/cpp/language/string_literal) is only used to avoid the escape of the quotation marks for a better readability. The XML initialization is similar.
+
+``` cpp
+auto xml_string = "
+    <port>9876</port>
+    <host>staging</host>
+";
+
+DatabaseConnector db(XML(xml_string));
+```
+
+
+## Example: Functor state
+
+When using functors it is advantageous to separate the state into a <a
+href="https://en.wikipedia.org/wiki/Passive_data_structure"
+target="_blank">passive data structure (PDS)</a>.
+
+``` cpp
+struct Settings
+{
+    std::string host;
+    uint16_t port;
+    std::string database;
+    std::string user;
+    std::string password;
+}
+
+struct Functor
+{
+    Functor(Settings const& settings)
+     : settings(settings)
+    {}
+
+    void operator()() const;
+
+  private:
+
+    Settings settings;
+}
+```

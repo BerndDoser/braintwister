@@ -1,0 +1,32 @@
+---
+title: "About"
+---
+
+### The Organization
+
+<p class="text-justify">
+BrainTwister<sup>&reg;</sup> is a <a href="https://euipo.europa.eu/eSearch/#details/trademarks/013877841"
+target="_blank">registered trademark of the European Union</a> for developing and distributing hard- and software products for scientific purposes. Furthermore for consultancy of any kind scientific and technological services.
+</p>
+
+### The Founder
+
+<p class="text-justify">
+<img src="images/portrait-bernd-doser.jpg"
+style="float:left; margin-left:3mm; margin-right:5mm; margin-top:3mm"/>
+
+BrainTwister<sup>&reg;</sup> was created by Bernd Doser in 2015. He has studied
+Chemistry at the University of Tübingen and completed his PhD in Theoretical
+Chemistry in the field of linear scaling algorithms for ab-initio quantum
+chemistry. After a research stay at the University of Munich (LMU), he worked
+as Scientific Software Engineer at
+<a href="https://avmatsim.eu"
+target="_blank">Avant-Garde Materials Simulation GmbH</a>
+in Freiburg developing software for crystal structure prediction and automatic
+force field generation.
+In his current position as Senior Software Developer at the 
+<a href="https://h-its.org"
+target="_blank">Heidelberg Institute for Theoretical Studies gGmbH</a>
+he is responsible for modern software engineering methods and high-performance
+programming techniques.
+</p>

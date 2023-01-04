@@ -1,0 +1,23 @@
+---
+title: "GeneHunter"
+teaser: "Identification of organism from a stream of DNA sequences."
+image: genehunter-seed-location.jpg
+---
+![](genehunter-seed-location.jpg)
+
+A hash map based algorithm with fixed sized sequence tokens is used to locate
+matching regions. Then, the best match is determined by the match quality
+calculated using the local alignment algorithm of Smith-Waterman. Finally, the
+organism and gene infomations are extracted from the NCBI taxonomy and GenBank
+database. 
+
+GeneHunter is using the nucleiotide and taxonomy databases of <a
+href="https://www.ncbi.nlm.nih.gov/" target="_blank" alt="ii">National Center
+for Biotechnology Information (NCBI)</a> to identify organisms and genes from
+DNA sequencer data.
+
+<div class="row t60 b60">
+  <div class="small-12 text-center columns">
+    <a class="button large radius alert" href="https://github.com/BrainTwister/GeneHunter">Fork me on GitHub</a>
+  </div>
+</div>
