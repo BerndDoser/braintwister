@@ -11,6 +11,8 @@ website:
         href: https://github.com/bernddoser
       - icon: mastodon
         href: https://mastodon.world/@braintwister
+      - icon: twitter
+        href: https://twitter.com/BerndDoser
       - icon: linkedin
         href: https://www.linkedin.com/in/bernddoser
     left:
@@ -18,6 +20,8 @@ website:
         href: index.qmd
       - text: Products
         href: products.qmd
+      - text: Services
+        href: services.qmd
       - text: Blog
         href: blog.qmd
       - about.qmd

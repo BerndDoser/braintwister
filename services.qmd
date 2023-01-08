@@ -1,0 +1,19 @@
+---
+title: "Services"
+---
+
+We offer consulting and training in any kind of scientific computing and
+software development. Our main concern is in the development of high quality
+scientific software by the use of modern languages and libraries as well as by
+the constant improvement of our development techniques.
+
+Our areas of expertise include
+
+ - Numerical simulations
+ - Ab initio quantum chemistry
+ - Sequence alignment
+ - Machine learning
+ - Generic and functional programming
+
+[Contact us](mailto:service@braintwister.eu) for any questions, support or feature request.
+
