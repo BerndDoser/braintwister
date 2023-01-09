@@ -1,3 +1,3 @@
 # BrainTwister website
 
-https://bernddoser.github.io/braintwister/
+[braintwister.github.io](https://braintwister.github.io)
