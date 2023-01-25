@@ -2,9 +2,9 @@
   {
     "listing": "/blog.html",
     "items": [
-      "/posts/2018-01-16-record.html",
-      "/posts/2017-12-28-docker-development-environment.html",
-      "/posts/2017-11-01-welcome.html"
+      "/posts/record.html",
+      "/posts/docker-development-environment.html",
+      "/posts/welcome.html"
     ]
   },
   {

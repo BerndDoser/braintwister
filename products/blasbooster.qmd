@@ -1,7 +1,7 @@
 ---
 title: "BlasBooster"
 description: "BLAS library combining dense and sparse algorithms."
-image: blasbooster-flowchart.jpg
+image: ../images/blasbooster-flowchart.jpg
 ---
 
 Algorithms in the field of linear algebra are strictly separated into a dense
@@ -10,7 +10,7 @@ worlds in a dynamic way by dividing matrices and vectors with respect to their
 type, occupation and accuracy, so that in each case the most appropriate
 algorithm can by applied.
 
-![BlasBooster type matrix](blasbooster-type-matrix.jpg)
+![BlasBooster type matrix](../images/blasbooster-type-matrix.jpg)
 
 Let's consider, for instance, a matrix-matrix multiplication. First, the
 matrices A and B will be divided into sub-matrices. Then, each sub-matrix will
@@ -34,7 +34,7 @@ For the actual multiplication `A x B`, several multiplications of sub-matrices
 of different types will be performed and summed up to the the resulting matrix
 `C`.
 
-![BlasBooster matrix multiplication](blasbooster-matmult.jpg)
+![BlasBooster matrix multiplication](../images/blasbooster-matmult.jpg)
 
 In addition to the direct usage of the BlasBooster interface, the [conventional BLAS standard](http://www.netlib.org/blas){.external target="_blank"} is also supported. Therefore, it is possible to use BlasBooster
 without any changes within your application by only linking the BlasBooster
@@ -43,10 +43,6 @@ NVIDIA cuBLAS. Moreover, the special module BlasAnalyzer assess your
 application with respect to the BLAS usage and reports a summary of all
 relevant values and timings.
 
-![BlasBooster scheme](blasbooster-flowchart.jpg)
+![BlasBooster scheme](../images/blasbooster-flowchart.jpg)
 
-<div class="row t60 b60">
-  <div class="small-12 text-center columns">
-    <a class="button large radius alert" href="https://github.com/BrainTwister/BlasBooster">Fork me on GitHub</a>
-  </div>
-</div>
+[Fork me on GitHub](https://github.com/BrainTwister/BlasBooster)
