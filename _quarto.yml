@@ -34,5 +34,5 @@ format:
       dark: darkly
     toc: true
 
-
-
+resources:
+  - CNAME
