@@ -1,66 +1,24 @@
 [
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Record: A heterogeneous data structure for C++\n\n\n\n\n\n\n\nC++\n\n\nFunctional programming\n\n\n\n\nRecord provides a linear, direct accessible data structure with heterogeneous entries.\n\n\n\n\n\n\nJan 16, 2018\n\n\nBernd Doser\n\n\n\n\n\n\n  \n\n\n\n\nDocker containers for software development\n\n\n\n\n\n\n\nC++\n\n\nDocker\n\n\nSoftware development\n\n\n\n\nFast, reproducible, and portable docker containers for C++ development\n\n\n\n\n\n\nDec 28, 2017\n\n\nBernd Doser\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome to BrainTwister\n\n\n\n\n\n\n\nGeneral\n\n\n\n\nThe Future of Scientific Engineering\n\n\n\n\n\n\nNov 1, 2017\n\n\nBernd Doser\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "services.html",
-    "href": "services.html",
-    "title": "Services",
-    "section": "",
-    "text": "We offer consulting and training in any kind of scientific computing and software development. Our main concern is in the development of high quality scientific software by the use of modern languages and libraries as well as by the constant improvement of our development techniques.\nOur areas of expertise include\n\nNumerical simulations\nAb initio quantum chemistry\nSequence alignment\nMachine learning\nGeneric and functional programming\n\nContact us for any questions, support or feature request."
-  },
-  {
-    "objectID": "products/genehunter.html",
-    "href": "products/genehunter.html",
-    "title": "GeneHunter",
-    "section": "",
-    "text": "A hash map based algorithm with fixed sized sequence tokens is used to locate matching regions. Then, the best match is determined by the match quality calculated using the local alignment algorithm of Smith-Waterman. Finally, the organism and gene infomations are extracted from the NCBI taxonomy and GenBank database.\nGeneHunter is using the nucleiotide and taxonomy databases of National Center for Biotechnology Information (NCBI) to identify organisms and genes from DNA sequencer data.\nFork me on GitHub"
+    "text": "The Organization\n\nBrainTwister® is a registered trademark of the European Union for developing and distributing hard- and software products for scientific purposes. Furthermore for consultancy of any kind scientific and technological services.\n\n\n\nThe Founder\n\n\nBrainTwister® was created by Bernd Doser in 2015. He has studied Chemistry at the University of Tübingen and completed his PhD in Theoretical Chemistry in the field of linear scaling algorithms for ab-initio quantum chemistry. After a research stay at the University of Munich (LMU), he worked as Scientific Software Engineer at Avant-Garde Materials Simulation GmbH in Freiburg developing software for crystal structure prediction and automatic force field generation. In his current position as Senior Software Developer at the Heidelberg Institute for Theoretical Studies gGmbH he is responsible for modern software engineering methods and high-performance programming techniques."
   },
   {
     "objectID": "products/blasbooster.html",
     "href": "products/blasbooster.html",
     "title": "BlasBooster",
     "section": "",
-    "text": "Algorithms in the field of linear algebra are strictly separated into a dense and a sparse world. BlasBooster provides an opportunity to combine these two worlds in a dynamic way by dividing matrices and vectors with respect to their type, occupation and accuracy, so that in each case the most appropriate algorithm can by applied.\n\n\n\nBlasBooster type matrix\n\n\nLet’s consider, for instance, a matrix-matrix multiplication. First, the matrices A and B will be divided into sub-matrices. Then, each sub-matrix will be converted into their ideal representation with respect to their occupation and significance. Typical matrix types are:\n\nMatrix<Dense, double>\nMatrix<Dense, float>\nMatrix<Sparse, double>\nMatrix<Sparse, float>\nMultipleMatrix<Matrix<Sparse, double>, Matrix<Dense, float>>\nMultipleMatrix<Matrix<Sparse, double>, Matrix<Sparse, float>>\n\nHere, the MultipleMatrix is a special, composed matrix type which is comparable to an expression template of a matrix sum. The type MultipleMatrix<Sparse, double>, Matrix<Dense, float>>, for instance, is useful if a matrix have many small entries which can be stored in single precision and only some entries which must be stored in double precision.\nFor the actual multiplication A x B, several multiplications of sub-matrices of different types will be performed and summed up to the the resulting matrix C.\n\n\n\nBlasBooster matrix multiplication\n\n\nIn addition to the direct usage of the BlasBooster interface, the conventional BLAS standard is also supported. Therefore, it is possible to use BlasBooster without any changes within your application by only linking the BlasBooster library instead of the conventional BLAS library like OpenBLAS, IntelMKL, or NVIDIA cuBLAS. Moreover, the special module BlasAnalyzer assess your application with respect to the BLAS usage and reports a summary of all relevant values and timings.\n\n\n\nBlasBooster scheme\n\n\nFork me on GitHub"
+    "text": "Algorithms in the field of linear algebra are strictly separated into a dense and a sparse world. BlasBooster provides an opportunity to combine these two worlds in a dynamic way by dividing matrices and vectors with respect to their type, occupation and accuracy, so that in each case the most appropriate algorithm can by applied.\n\n\n\nBlasBooster type matrix\n\n\nLet’s consider, for instance, a matrix-matrix multiplication. First, the matrices A and B will be divided into sub-matrices. Then, each sub-matrix will be converted into their ideal representation with respect to their occupation and significance. Typical matrix types are:\n\nMatrix&lt;Dense, double&gt;\nMatrix&lt;Dense, float&gt;\nMatrix&lt;Sparse, double&gt;\nMatrix&lt;Sparse, float&gt;\nMultipleMatrix&lt;Matrix&lt;Sparse, double&gt;, Matrix&lt;Dense, float&gt;&gt;\nMultipleMatrix&lt;Matrix&lt;Sparse, double&gt;, Matrix&lt;Sparse, float&gt;&gt;\n\nHere, the MultipleMatrix is a special, composed matrix type which is comparable to an expression template of a matrix sum. The type MultipleMatrix&lt;Sparse, double&gt;, Matrix&lt;Dense, float&gt;&gt;, for instance, is useful if a matrix have many small entries which can be stored in single precision and only some entries which must be stored in double precision.\nFor the actual multiplication A x B, several multiplications of sub-matrices of different types will be performed and summed up to the the resulting matrix C.\n\n\n\nBlasBooster matrix multiplication\n\n\nIn addition to the direct usage of the BlasBooster interface, the conventional BLAS standard is also supported. Therefore, it is possible to use BlasBooster without any changes within your application by only linking the BlasBooster library instead of the conventional BLAS library like OpenBLAS, IntelMKL, or NVIDIA cuBLAS. Moreover, the special module BlasAnalyzer assess your application with respect to the BLAS usage and reports a summary of all relevant values and timings.\n\n\n\nBlasBooster scheme\n\n\nFork me on GitHub"
   },
   {
-    "objectID": "posts/docker-development-environment.html",
-    "href": "posts/docker-development-environment.html",
-    "title": "Docker containers for software development",
+    "objectID": "products.html",
+    "href": "products.html",
+    "title": "Products",
     "section": "",
-    "text": "Docker enables a great way for fast, small, reproducible, and portable software development environments.\nThe advantages are:"
-  },
-  {
-    "objectID": "posts/docker-development-environment.html#docker-images",
-    "href": "posts/docker-development-environment.html#docker-images",
-    "title": "Docker containers for software development",
-    "section": "Docker images",
-    "text": "Docker images\nEach directory correspond to an environment module. They can stick together as a chain:\nmodule1 - module2 - module3 - ...\nThe image module1-module2-module3 is using the image module1-module2 as base, which will be set using the build-time variable BASE_IMAGE. For example the image ubuntu-16.04-cmake-3.12 will be build with\ncd cmake-3.12\ndocker build -t braintwister/ubuntu-16.04-cmake-3.12 --build-arg BASE_IMAGE=braintwister/ubuntu-16.04 .\nPlease find a list of available images at images.yml. The images in the list will be build automatically with Jenkins and pushed to DockerHub.\nThe docker images can be pulled with\ndocker pull braintwister/<image-name>\n\n\n\nDocker scheme"
-  },
-  {
-    "objectID": "posts/docker-development-environment.html#eclipse-ide",
-    "href": "posts/docker-development-environment.html#eclipse-ide",
-    "title": "Docker containers for software development",
-    "section": "Eclipse IDE",
-    "text": "Eclipse IDE\n\nEclipse IDE for C++ development\nA ready-for-action eclipse IDE with\n\nCMake\nGCC\nconan.io\ndocker-engine\n\ninstalled can be started by\ndocker run -d -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY \\\n  braintwister/ubuntu-16.04-cmake-3.12-gcc-7-conan-1.6-docker-18.06-eclipse-cpp-4.7.3\nor using docker-compose by\nversion: \"3\"\nservices:\n\n  eclipse:\n    image: braintwister/ubuntu-16.04-cmake-3.12-gcc-7-conan-1.6-docker-18.03-eclipse-cpp-4.7.3\n    volumes:\n      - /tmp/.X11-unix:/tmp/.X11-unix:ro\n    environment:\n      - DISPLAY\n    privileged: true\nThe mount of the X11 socket file (/tmp/.X11-unix) and the definition of the environment variable DISPLAY induce the application within the container to send the rendering instructions to the host X server. To allow the container to use the host display, the command xhost +local: must be executed on the host before starting the container. The privileged mode is needed for debugging with gdb."
-  },
-  {
-    "objectID": "posts/docker-development-environment.html#eclipse-ide-photon",
-    "href": "posts/docker-development-environment.html#eclipse-ide-photon",
-    "title": "Docker containers for software development",
-    "section": "Eclipse IDE Photon",
-    "text": "Eclipse IDE Photon\nEclipse Photon can be started with the latest GCC compiler by\ndocker run -d -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY \\\n  braintwister/ubuntu-18.04-cmake-3.12-gcc-8-conan-1.6-docker-18.06-eclipse-cpp-4.8\n\nEclipse IDE for CUDA development\nFirst of all nvidia-docker version 2 must be installed and the runtime attribute must be set to nvidia, that the container get access to the host GPU card. The nvidia runtime attribute is currently only available at docker-compose version 2.3.\nFor CUDA development the NVIDIA IDE nsight is highly recommended, because it provides special support for code editing, debugging, and profiling. The version of nsight is not adjustable, as it depends to the version of the cuda module.\nversion: \"2.3\"\nservices:\n\n  eclipse:\n    image: braintwister/ubuntu-16.04-cuda-9.2-cmake-3.12-gcc-7-conan-1.6-nsight\n    runtime: nvidia\n    volumes:\n      - /tmp/.X11-unix:/tmp/.X11-unix:ro\n    environment:\n      - DISPLAY\n    privileged: true\n\n\nEclipse IDE for embedded development\nTo use the Eclipse CDT Arduino plugin simply choose the eclipse-arduino module and bind the serial port of your Arduino connection (here: /dev/ttyACM0):\nversion: \"3\"\nservices:\n\n  eclipse:\n    image: braintwister/ubuntu-16.04-cmake-3.12-gcc-7-conan-1.6-docker-18.06-eclipse-arduino-4.7.3\n    volumes:\n      - /tmp/.X11-unix:/tmp/.X11-unix:ro\n      - /dev/ttyACM0:/dev/ttyACM0\n    environment:\n      - DISPLAY\n    privileged: true\n\n\nPersistent storage\nThe data in the container can be made persistent by using a docker volume home for the home directory /home/user.\nversion: \"3\"\nservices:\n\n  eclipse:\n    image: braintwister/ubuntu-16.04-cmake-3.12-gcc-7-conan-1.6-docker-18.06-eclipse-cpp-4.7.3\n    volumes:\n      - /tmp/.X11-unix:/tmp/.X11-unix:ro \n      - home:/home/user\n    environment:\n      - DISPLAY\n    privileged: true\n\nvolumes:\n  home:\n\n\nProject-assigned development environment\nThe docker development environment can be directly stored within the source code repository and is able to bind the working directory of the source code into the development container. Therefore, the user in the container must be the owner of the source code working directory on the host. The user in the container can be set with the environment variables USER_ID, GROUP_ID, USER_NAME, and GROUP_NAME. In the following example the docker-compose file is stored in the root directory of a git repository. Starting docker-compose up -d in the root directory the current directory . will be bound to /home/${USER_NAME}/git/${PROJECT}. It is recommended to set the variables in an extra file .env, which is not controlled by the source control management, so that the docker-compose file must not be changed.\nversion: \"3\"\nservices:\n\n  eclipse:\n    image: braintwister/ubuntu-16.04-cmake-3.12-gcc-7-conan-1.6-docker-18.06-eclipse-cpp-4.7.3\n    volumes:\n      - /tmp/.X11-unix:/tmp/.X11-unix:ro \n      - home:/home/${USER_NAME}\n      - .:/home/${USER_NAME}/git/${PROJECT}\n    environment:\n      - DISPLAY\n      - USER_ID=${USER_ID}\n      - GROUP_ID=${GROUP_ID}\n      - USER_NAME=${USER_NAME}\n      - GROUP_NAME=${GROUP_NAME}\n    privileged: true\n\nvolumes:\n  home:\nThe .env-file can be generated by\ncat << EOT > .env \nPROJECT=`basename \"$PWD\"`\nUSER_ID=`id -u $USER`\nGROUP_ID=`id -g $USER`\nUSER_NAME=`id -un $USER`\nGROUP_NAME=`id -gn $USER`\nEOT"
-  },
-  {
-    "objectID": "posts/docker-development-environment.html#jenkins-build-container",
-    "href": "posts/docker-development-environment.html#jenkins-build-container",
-    "title": "Docker containers for software development",
-    "section": "Jenkins build container",
-    "text": "Jenkins build container\nA declarative Jenkinsfile can look like\npipeline {\n\n  agent {\n    docker {\n      image 'braintwister/ubuntu-16.04-cmake-3.12-clang-6-conan-1.6'\n    }\n  }\n\n  stages {\n    stage('Conan') {\n      steps {\n        sh 'conan install .'\n      }\n    }\n    stage('CMake') {\n      steps {\n        sh 'cmake .'\n      }\n    }\n    stage('Build') {\n      steps {\n        sh 'make all'\n      }\n    }\n    stage('Test') {\n      steps {\n        sh 'make test'\n      }\n    }\n  }\n}\nFork me on GitHub"
+    "text": "BlasBooster\n\n\n\n\n\nBLAS library combining dense and sparse algorithms.\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nGeneHunter\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/welcome.html",
@@ -68,6 +26,20 @@
     "title": "Welcome to BrainTwister",
     "section": "",
     "text": "In the recent decades tremendous progress was achieved in many fields of scientific computing such as machine learning, genome sequencing, numerical simulations, to name but a few. This amazing success was not only made possible by the continuous development of the algorithms, but also by the constant improvement of powerful programming languages and development techniques to manage the complex algorithms. However, many scientific software projects are still hard to maintain or failing because of deprecated programming languages, libraries, or features or disregarded well-established development techniques.\nThe purpose of BrainTwister is in the development and provision of high performance software in the field of scientific computing, while at the same time special emphasis will be placed in the usage of state-of-the art programming language features and development techniques without compromises.\nThis includes for example:\n\nVersion control via Git\nProject management via GitLab and GitHub\nContinuous integration via Jenkins\nDevelopment environment via Docker\nExtensive software testing\nSoftware metric control\n\nThematically, the main focus is at the moment in the development of BlasBooster, a linear algebra library to combine dense and sparse algorithms.\nI hope that my short outlook has made your interest grow to find out more and I am looking forward to received your feedback.\nBest regards,\nBernd Doser"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Record: A heterogeneous data structure for C++\n\n\n\n\n\n\n\nC++\n\n\nFunctional programming\n\n\n\n\nRecord provides a linear, direct accessible data structure with heterogeneous entries.\n\n\n\n\n\n\nJan 16, 2018\n\n\nBernd Doser\n\n\n\n\n\n\n  \n\n\n\n\nDocker containers for software development\n\n\n\n\n\n\n\nC++\n\n\nDocker\n\n\nSoftware development\n\n\n\n\nFast, reproducible, and portable docker containers for C++ development\n\n\n\n\n\n\nDec 28, 2017\n\n\nBernd Doser\n\n\n\n\n\n\n  \n\n\n\n\nWelcome to BrainTwister\n\n\n\n\n\n\n\nGeneral\n\n\n\n\nThe Future of Scientific Engineering\n\n\n\n\n\n\nNov 1, 2017\n\n\nBernd Doser\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "BrainTwister",
+    "section": "",
+    "text": "Welcome to BrainTwister®, where scientific software is made with the highest standards in mind. Using state-of-the-art methods and modern tools, we deliver high-quality, high-performance software to help you achieve your goals.\nLet us be your trusted partner in your journey to scientific excellence."
   },
   {
     "objectID": "posts/record.html",
@@ -88,7 +60,7 @@
     "href": "posts/record.html#construction-by-json-or-xml",
     "title": "Record: A heterogeneous data structure for C++",
     "section": "Construction by JSON or XML",
-    "text": "Construction by JSON or XML\nIt is also possible to construct an object by JSON or XML. The construction is order independent and use the default values if it is not given in JSON/XML.\nauto json_string = R\"(\n    {\n        \"port\": 9876,\n        \"host\": \"staging\",\n    }\n)\";\n\nDatabaseConnector db(JSON(json_string));\nHere, the string literal R is only used to avoid the escape of the quotation marks for a better readability. The XML initialization is similar.\nauto xml_string = \"\n    <port>9876</port>\n    <host>staging</host>\n\";\n\nDatabaseConnector db(XML(xml_string));"
+    "text": "Construction by JSON or XML\nIt is also possible to construct an object by JSON or XML. The construction is order independent and use the default values if it is not given in JSON/XML.\nauto json_string = R\"(\n    {\n        \"port\": 9876,\n        \"host\": \"staging\",\n    }\n)\";\n\nDatabaseConnector db(JSON(json_string));\nHere, the string literal R is only used to avoid the escape of the quotation marks for a better readability. The XML initialization is similar.\nauto xml_string = \"\n    &lt;port&gt;9876&lt;/port&gt;\n    &lt;host&gt;staging&lt;/host&gt;\n\";\n\nDatabaseConnector db(XML(xml_string));"
   },
   {
     "objectID": "posts/record.html#example-functor-state",
@@ -98,24 +70,52 @@
     "text": "Example: Functor state\nWhen using functors it is advantageous to separate the state into a passive data structure (PDS).\nstruct Settings\n{\n    std::string host;\n    uint16_t port;\n    std::string database;\n    std::string user;\n    std::string password;\n}\n\nstruct Functor\n{\n    Functor(Settings const& settings)\n     : settings(settings)\n    {}\n\n    void operator()() const;\n\n  private:\n\n    Settings settings;\n}"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "posts/docker-development-environment.html",
+    "href": "posts/docker-development-environment.html",
+    "title": "Docker containers for software development",
     "section": "",
-    "text": "The Organization\n\nBrainTwister® is a registered trademark of the European Union for developing and distributing hard- and software products for scientific purposes. Furthermore for consultancy of any kind scientific and technological services.\n\n\n\nThe Founder\n\n\nBrainTwister® was created by Bernd Doser in 2015. He has studied Chemistry at the University of Tübingen and completed his PhD in Theoretical Chemistry in the field of linear scaling algorithms for ab-initio quantum chemistry. After a research stay at the University of Munich (LMU), he worked as Scientific Software Engineer at Avant-Garde Materials Simulation GmbH in Freiburg developing software for crystal structure prediction and automatic force field generation. In his current position as Senior Software Developer at the Heidelberg Institute for Theoretical Studies gGmbH he is responsible for modern software engineering methods and high-performance programming techniques."
+    "text": "Docker enables a great way for fast, small, reproducible, and portable software development environments.\nThe advantages are:"
   },
   {
-    "objectID": "products.html",
-    "href": "products.html",
-    "title": "Products",
-    "section": "",
-    "text": "BlasBooster\n\n\n\n\n\nBLAS library combining dense and sparse algorithms.\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nGeneHunter\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nNo matching items"
+    "objectID": "posts/docker-development-environment.html#docker-images",
+    "href": "posts/docker-development-environment.html#docker-images",
+    "title": "Docker containers for software development",
+    "section": "Docker images",
+    "text": "Docker images\nEach directory correspond to an environment module. They can stick together as a chain:\nmodule1 - module2 - module3 - ...\nThe image module1-module2-module3 is using the image module1-module2 as base, which will be set using the build-time variable BASE_IMAGE. For example the image ubuntu-16.04-cmake-3.12 will be build with\ncd cmake-3.12\ndocker build -t braintwister/ubuntu-16.04-cmake-3.12 --build-arg BASE_IMAGE=braintwister/ubuntu-16.04 .\nPlease find a list of available images at images.yml. The images in the list will be build automatically with Jenkins and pushed to DockerHub.\nThe docker images can be pulled with\ndocker pull braintwister/&lt;image-name&gt;\n\n\n\nDocker scheme"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "BrainTwister",
+    "objectID": "posts/docker-development-environment.html#eclipse-ide",
+    "href": "posts/docker-development-environment.html#eclipse-ide",
+    "title": "Docker containers for software development",
+    "section": "Eclipse IDE",
+    "text": "Eclipse IDE\n\nEclipse IDE for C++ development\nA ready-for-action eclipse IDE with\n\nCMake\nGCC\nconan.io\ndocker-engine\n\ninstalled can be started by\ndocker run -d -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY \\\n  braintwister/ubuntu-16.04-cmake-3.12-gcc-7-conan-1.6-docker-18.06-eclipse-cpp-4.7.3\nor using docker-compose by\nversion: \"3\"\nservices:\n\n  eclipse:\n    image: braintwister/ubuntu-16.04-cmake-3.12-gcc-7-conan-1.6-docker-18.03-eclipse-cpp-4.7.3\n    volumes:\n      - /tmp/.X11-unix:/tmp/.X11-unix:ro\n    environment:\n      - DISPLAY\n    privileged: true\nThe mount of the X11 socket file (/tmp/.X11-unix) and the definition of the environment variable DISPLAY induce the application within the container to send the rendering instructions to the host X server. To allow the container to use the host display, the command xhost +local: must be executed on the host before starting the container. The privileged mode is needed for debugging with gdb."
+  },
+  {
+    "objectID": "posts/docker-development-environment.html#eclipse-ide-photon",
+    "href": "posts/docker-development-environment.html#eclipse-ide-photon",
+    "title": "Docker containers for software development",
+    "section": "Eclipse IDE Photon",
+    "text": "Eclipse IDE Photon\nEclipse Photon can be started with the latest GCC compiler by\ndocker run -d -v /tmp/.X11-unix:/tmp/.X11-unix:ro -e DISPLAY \\\n  braintwister/ubuntu-18.04-cmake-3.12-gcc-8-conan-1.6-docker-18.06-eclipse-cpp-4.8\n\nEclipse IDE for CUDA development\nFirst of all nvidia-docker version 2 must be installed and the runtime attribute must be set to nvidia, that the container get access to the host GPU card. The nvidia runtime attribute is currently only available at docker-compose version 2.3.\nFor CUDA development the NVIDIA IDE nsight is highly recommended, because it provides special support for code editing, debugging, and profiling. The version of nsight is not adjustable, as it depends to the version of the cuda module.\nversion: \"2.3\"\nservices:\n\n  eclipse:\n    image: braintwister/ubuntu-16.04-cuda-9.2-cmake-3.12-gcc-7-conan-1.6-nsight\n    runtime: nvidia\n    volumes:\n      - /tmp/.X11-unix:/tmp/.X11-unix:ro\n    environment:\n      - DISPLAY\n    privileged: true\n\n\nEclipse IDE for embedded development\nTo use the Eclipse CDT Arduino plugin simply choose the eclipse-arduino module and bind the serial port of your Arduino connection (here: /dev/ttyACM0):\nversion: \"3\"\nservices:\n\n  eclipse:\n    image: braintwister/ubuntu-16.04-cmake-3.12-gcc-7-conan-1.6-docker-18.06-eclipse-arduino-4.7.3\n    volumes:\n      - /tmp/.X11-unix:/tmp/.X11-unix:ro\n      - /dev/ttyACM0:/dev/ttyACM0\n    environment:\n      - DISPLAY\n    privileged: true\n\n\nPersistent storage\nThe data in the container can be made persistent by using a docker volume home for the home directory /home/user.\nversion: \"3\"\nservices:\n\n  eclipse:\n    image: braintwister/ubuntu-16.04-cmake-3.12-gcc-7-conan-1.6-docker-18.06-eclipse-cpp-4.7.3\n    volumes:\n      - /tmp/.X11-unix:/tmp/.X11-unix:ro \n      - home:/home/user\n    environment:\n      - DISPLAY\n    privileged: true\n\nvolumes:\n  home:\n\n\nProject-assigned development environment\nThe docker development environment can be directly stored within the source code repository and is able to bind the working directory of the source code into the development container. Therefore, the user in the container must be the owner of the source code working directory on the host. The user in the container can be set with the environment variables USER_ID, GROUP_ID, USER_NAME, and GROUP_NAME. In the following example the docker-compose file is stored in the root directory of a git repository. Starting docker-compose up -d in the root directory the current directory . will be bound to /home/${USER_NAME}/git/${PROJECT}. It is recommended to set the variables in an extra file .env, which is not controlled by the source control management, so that the docker-compose file must not be changed.\nversion: \"3\"\nservices:\n\n  eclipse:\n    image: braintwister/ubuntu-16.04-cmake-3.12-gcc-7-conan-1.6-docker-18.06-eclipse-cpp-4.7.3\n    volumes:\n      - /tmp/.X11-unix:/tmp/.X11-unix:ro \n      - home:/home/${USER_NAME}\n      - .:/home/${USER_NAME}/git/${PROJECT}\n    environment:\n      - DISPLAY\n      - USER_ID=${USER_ID}\n      - GROUP_ID=${GROUP_ID}\n      - USER_NAME=${USER_NAME}\n      - GROUP_NAME=${GROUP_NAME}\n    privileged: true\n\nvolumes:\n  home:\nThe .env-file can be generated by\ncat &lt;&lt; EOT &gt; .env \nPROJECT=`basename \"$PWD\"`\nUSER_ID=`id -u $USER`\nGROUP_ID=`id -g $USER`\nUSER_NAME=`id -un $USER`\nGROUP_NAME=`id -gn $USER`\nEOT"
+  },
+  {
+    "objectID": "posts/docker-development-environment.html#jenkins-build-container",
+    "href": "posts/docker-development-environment.html#jenkins-build-container",
+    "title": "Docker containers for software development",
+    "section": "Jenkins build container",
+    "text": "Jenkins build container\nA declarative Jenkinsfile can look like\npipeline {\n\n  agent {\n    docker {\n      image 'braintwister/ubuntu-16.04-cmake-3.12-clang-6-conan-1.6'\n    }\n  }\n\n  stages {\n    stage('Conan') {\n      steps {\n        sh 'conan install .'\n      }\n    }\n    stage('CMake') {\n      steps {\n        sh 'cmake .'\n      }\n    }\n    stage('Build') {\n      steps {\n        sh 'make all'\n      }\n    }\n    stage('Test') {\n      steps {\n        sh 'make test'\n      }\n    }\n  }\n}\nFork me on GitHub"
+  },
+  {
+    "objectID": "products/genehunter.html",
+    "href": "products/genehunter.html",
+    "title": "GeneHunter",
     "section": "",
-    "text": "Welcome to BrainTwister®, where scientific software is made with the highest standards in mind. Using state-of-the-art methods and modern tools, we deliver high-quality, high-performance software to help you achieve your goals.\nLet us be your trusted partner in your journey to scientific excellence."
+    "text": "A hash map based algorithm with fixed sized sequence tokens is used to locate matching regions. Then, the best match is determined by the match quality calculated using the local alignment algorithm of Smith-Waterman. Finally, the organism and gene infomations are extracted from the NCBI taxonomy and GenBank database.\nGeneHunter is using the nucleiotide and taxonomy databases of National Center for Biotechnology Information (NCBI) to identify organisms and genes from DNA sequencer data.\nFork me on GitHub"
+  },
+  {
+    "objectID": "services.html",
+    "href": "services.html",
+    "title": "Services",
+    "section": "",
+    "text": "We offer consulting and training in any kind of scientific computing and software development. Our main concern is in the development of high quality scientific software by the use of modern languages and libraries as well as by the constant improvement of our development techniques.\nOur areas of expertise include\n\nNumerical simulations\nAb initio quantum chemistry\nSequence alignment\nMachine learning\nGeneric and functional programming\n\nContact us for any questions, support or feature request."
   }
 ]

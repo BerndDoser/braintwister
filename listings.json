@@ -1,17 +1,17 @@
 [
   {
+    "listing": "/products.html",
+    "items": [
+      "/products/blasbooster.html",
+      "/products/genehunter.html"
+    ]
+  },
+  {
     "listing": "/blog.html",
     "items": [
       "/posts/record.html",
       "/posts/docker-development-environment.html",
       "/posts/welcome.html"
-    ]
-  },
-  {
-    "listing": "/products.html",
-    "items": [
-      "/products/blasbooster.html",
-      "/products/genehunter.html"
     ]
   }
 ]
